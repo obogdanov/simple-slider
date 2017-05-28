@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+}
+.wrapper {;
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	margin: 0 auto;
+	width: 1366px;
+}
+#slider {
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	width: 800px;
+	height: 200px;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.slide {
+	min-width: 800px;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+	color: #fff;
+	font-size: 50px;
+}
+#slide1 {
+	background-color: red;
+}
+#slide2 {
+	background-color: green;
+}
+#slide3 {
+	background-color: black;
+}
+#slide4 {
+	background-color: yellow;
+}
+#slide5 {
+	background-color: pink;
+}
+
+.button {
+	width: 30px;
+	height: 200px;
+	background-color: rgba(0,0,0, 0.2);
+}
+.button:hover {
+	width: 30px;
+	height: 200px;
+	background-color: rgba(0,0,0, 0.5);
+	cursor: pointer;
+}
+#left {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#right {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.active {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.9s;
+}
+.prev {
+	position: absolute;
+	top: 0;
+	left: -800px;
+	transition: all 0.9s;
+}
+.next {
+	position: absolute;
+	top: 0;
+	left: 800px;
+	transition: all 0.9s;
+}
